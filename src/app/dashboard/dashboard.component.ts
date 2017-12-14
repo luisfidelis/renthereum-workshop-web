@@ -1,16 +1,16 @@
 import { Component, OnInit, ChangeDetectorRef, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
-import { NewItemDialogComponent } from './dashboard/dialogs/new-item-dialog';
-import { RentItemDialogComponent } from './dashboard/dialogs/rent-item-dialog';
-import { RenthereumService } from './contracts/renthereum.service';
+import { NewItemDialogComponent } from './dialogs/new-item-dialog';
+import { RentItemDialogComponent } from './dialogs/rent-item-dialog';
+import { RenthereumService } from '../contracts/renthereum.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class AppComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   title = 'Renthereum';
   private web3;
 

@@ -12,36 +12,20 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { DashboardModule } from './dashboard/dashboard.module';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { RenthereumService } from './contracts/renthereum.service';
+import { ConnectUportComponent } from './connectUport.component';
+import { RenthereumService } from '../contracts/renthereum.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    ConnectUportComponent,
   ],
-  entryComponents: [DashboardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    DashboardModule,
-    FormsModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatCardModule,
     FlexLayoutModule,
-    MatButtonModule,
-    MatChipsModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-
   ],
-  providers: [RenthereumService],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class ConnectUportModule { }

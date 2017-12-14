@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
-import { RenthereumService } from '../contracts/renthereum.service';
+import { RenthereumService } from '../../contracts/renthereum.service';
 
 @Component({
   selector: 'app-new-item-dialog',
