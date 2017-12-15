@@ -13,7 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { DashboardComponent } from './dashboard.component';
 import { NewItemDialogComponent } from './dialogs/new-item-dialog';
@@ -34,7 +34,7 @@ import { RenthereumService } from '../contracts/renthereum.service';
     MatMenuModule,
     MatToolbarModule,
     MatCardModule,
-    FlexLayoutModule,
+    //FlexLayoutModule,
     MatButtonModule,
     MatChipsModule,
     MatDialogModule,

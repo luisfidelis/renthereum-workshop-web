@@ -13,8 +13,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { ConnectUportComponent } from './connectUport.component';
 import { RenthereumService } from '../contracts/renthereum.service';
 
@@ -25,7 +23,8 @@ import { RenthereumService } from '../contracts/renthereum.service';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
   ],
 })
-export class ConnectUportModule { }
+export class ConnectUportModule {
+  
+}

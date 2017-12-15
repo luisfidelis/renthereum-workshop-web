@@ -14,7 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { DashboardModule } from './dashboard/dashboard.module';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -33,7 +33,7 @@ import { RenthereumService } from './contracts/renthereum.service';
     MatMenuModule,
     MatToolbarModule,
     MatCardModule,
-    FlexLayoutModule,
+  //  FlexLayoutModule,
     MatButtonModule,
     MatChipsModule,
     MatDialogModule,

@@ -20,34 +20,10 @@ export class AppComponent implements OnInit {
     renthereum.init();
   }
 
-  openNewItemDialog(): void {
-    const newItemDialogRef = this.dialog.open(NewItemDialogComponent, {
-      width: '500px',
-    });
-
-    newItemDialogRef.afterClosed().subscribe(result => {
-      this.loadItems();
-    });
+  connectUport(): void {
+    
   }
-
-  openRentItemDialog(item): void {
-    const rentDialogRef = this.dialog.open(RentItemDialogComponent, {
-      width: '500px',
-      data : { item }
-    });
-
-    rentDialogRef.afterClosed().subscribe(result => {
-      this.loadItems();
-    });
-  }
-
-  private loadItems() {
-    return this.renthereum.getItemsToRent().then(items => {
-      this.itemsToRent = items.filter(item => item.status == 0);
-    });
-  }
-
   ngOnInit() {
-    this.loadItems();
+   // this.loadItems();
   }
 }

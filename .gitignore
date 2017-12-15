@@ -44,3 +44,5 @@ Thumbs.db
 
 # Contract
 /src/app/contracts/Renthereum.json
+
+.env
